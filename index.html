@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Vishnu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0af722e7f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <span class="nav-logo">Portfolio</span>
+    <div class="nav-links">
+        <span class="nav-link" onclick="showSection('home')">Home</span>
+        <span class="nav-link" onclick="showSection('about')">About</span>
+        <span class="nav-link" onclick="showSection('experience')">Experience</span>
+        <span class="nav-link" onclick="showSection('projects')">Projects</span>
+        <span class="nav-link" onclick="showSection('links')">Links</span>
+    </div>
+</nav>
+<div class="floating-bg-icons">
+    <i class="fab fa-java icon-bg" style="left:8vw;top:14vh;"></i>
+    <i class="fab fa-html5 icon-bg" style="left:83vw;top:12vh;"></i>
+    <i class="fab fa-css3-alt icon-bg" style="left:22vw;top:75vh;"></i>
+    <i class="fab fa-js-square icon-bg" style="left:78vw;top:68vh;"></i>
+    <i class="fab fa-chrome icon-bg" style="left:19vw;top:32vh;"></i>
+    <i class="fab fa-github icon-bg" style="left:64vw;top:82vh;"></i>
+    <i class="fab fa-linkedin icon-bg" style="left:60vw;top:10vh;"></i>
+    <i class="fas fa-brain icon-bg" style="left:11vw;top:82vh;"></i>
+    <i class="fas fa-cloud icon-bg" style="left:44vw;top:5vh;"></i>
+    <i class="fas fa-robot icon-bg" style="left:71vw;top:42vh;"></i>
+</div>
+<main class="main-content">
+    <section id="home" class="section active">
+        <div class="card square center-card card-glow home-card-animated">
+            <h1>Welcome to Vishnu's Portfolio</h1>
+            <div class="typewriter-box">
+                <span id="typewriter"></span>
+                <span class="typewriter-cursor">|</span>
+            </div>
+            <p>Passionate Java & Web Developer | Always learning, building, innovating!</p>
+            <p>Explore my professional journey, projects, and connect below.</p>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="card about-card">
+            <img class="profile-img" src="Vishnu%20pic.jpeg" alt="Vishnu Photo" />
+            <h2>About Me</h2>
+            <p class="about-passion">Hi! I’m Vishnu, a driven, results-oriented software developer passionate about building web technology and real-world solutions.</p>
+            <p>
+                <b>Passion:</b> Transforming ideas into impactful digital experiences<br>
+                <b>Skills:</b> Java, HTML, CSS, JS, SQL, Git, Agile, UI testing<br>
+            </p>
+            <a class="about-link" href="https://www.linkedin.com/in/varma2024" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </section>
+    <section id="experience" class="section">
+        <div class="card square">
+            <h2>Experience</h2>
+            <div class="exp-list">
+                <b>TEACHNOOK AWS Intern</b>
+                <ul>
+                    <li>Learned essentials of scalable infrastructure and customer service in a cloud environment.</li>
+                    <li>Created a practical hotel booking chatbot, improving automation and engagement.</li>
+                    <li>Explored pay-as-you-go cloud models for cost-effectiveness and business agility.</li>
+                </ul>
+                <b>Saral Tech Solutions (SEO Intern)</b>
+                <ul>
+                    <li>Mastered in-depth keyword research, on-page optimization, and SEO strategy.</li>
+                    <li>Used Google Search Console and analytics to improve website ranking and visibility.</li>
+                    <li>Assisted with SEO-driven content creation and implemented engagement strategies.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="card-grid">
+            <div class="proj-card square large-card" onclick="openProject(0)">
+                <div class="proj-title">Online Book Store</div>
+            </div>
+            <div class="proj-card square large-card" onclick="openProject(1)">
+                <div class="proj-title">Respiration Real-Time Monitoring</div>
+            </div>
+            <div class="proj-card square large-card" onclick="openProject(2)">
+                <div class="proj-title">Photography Portfolio</div>
+            </div>
+        </div>
+        <div id="proj-details" class="proj-details-card"></div>
+    </section>
+    <section id="links" class="section">
+        <div class="card square link-card">
+            <h2>Connect with Me</h2>
+            <div class="link-icons">
+                <div class="link-icon-col">
+                    <a href="https://www.linkedin.com/in/varma2024" target="_blank" title="LinkedIn">
+                        <img src="Link.png" alt="LinkedIn" class="custom-link-icon">
+                    </a>
+                    <span>LinkedIn</span>
+                </div>
+                <div class="link-icon-col">
+                    <a href="https://github.com/Vishnu-Dantuluri" target="_blank" title="GitHub">
+                        <img src="git.png" alt="GitHub" class="custom-link-icon">
+                    </a>
+                    <span>GitHub</span>
+                </div>
+                <div class="link-icon-col">
+                    <a href="mailto:vvvarma786@gmail.com" target="_blank" title="Email">
+                        <img src="mail.png" alt="Email" class="custom-link-icon">
+                    </a>
+                    <span>Email</span>
+                </div>
+                <div class="link-icon-col">
+                    <a href="tel:+919515498324" title="Call Now">
+                        <img src="phone.jpg" alt="Call" class="custom-link-icon">
+                    </a>
+                    <span>Call</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
